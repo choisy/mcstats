@@ -7,14 +7,14 @@
 drop_interactions(x)
 }
 \arguments{
-\item{formula}{an object of class formula}
+\item{formula}{an object of class \code{\link[stats]{formula}}.}
 }
 \description{
-This function drop interaction terms from a statistical model formula
+This function drops interaction terms from a statistical model formula.
 }
 \details{
-Returns a formula without interaction terms
+Returns a formula without interaction terms.
 }
 \author{
-Marc Choisy
+Marc Choisy.
 }

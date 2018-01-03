@@ -1,0 +1,11 @@
+Package: mcstats
+Type: Package
+Title: Complements to the R Stats Package
+Version: 0.1.0
+Author: Marc Choisy
+Maintainer: Marc Choisy <marc.choisy@ird.fr>
+Description: A set a miscellaneous functions for diverse statistical analyses
+License: MIT
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1

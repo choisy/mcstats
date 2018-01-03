@@ -10,15 +10,15 @@
 #' @importFrom MuMIn expand.formula
 #' @export
 #' @author Marc Choisy.
-drop_interactions <- function(x) {
-  env <- environment(x)
-  x %<>% expand.formula %>% as.character
-  x[3] %<>%
+drop_interactions <- function(formula) {
+  env <- environment(formula)
+  formula %<>% expand.formula %>% as.character
+  formula[3] %<>%
     strsplit("\\+") %>%
     unlist %>%
     grep(":", ., value = TRUE, invert = TRUE) %>%
     paste(collapse = "+")
-  x[c(2, 1, 3)] %>%
+  formula[c(2, 1, 3)] %>%
     paste(collapse = "") %>%
     as.formula(env)
 }

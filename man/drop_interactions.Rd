@@ -4,7 +4,7 @@
 \alias{drop_interactions}
 \title{Drop Interactions}
 \usage{
-drop_interactions(x)
+drop_interactions(formula)
 }
 \arguments{
 \item{formula}{an object of class \code{\link[stats]{formula}}.}

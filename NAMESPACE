@@ -2,7 +2,9 @@
 
 export(Anova2)
 export(drop_interactions)
+export(proportion)
 importFrom(MuMIn,expand.formula)
 importFrom(car,Anova)
 importFrom(magrittr,"%<>%")
 importFrom(magrittr,"%>%")
+importFrom(purrr,map2)

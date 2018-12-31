@@ -2,6 +2,7 @@
 
 export(Anova2)
 export(centers)
+export(downscale)
 export(drop_interactions)
 export(proportion)
 export(subsegment_center)

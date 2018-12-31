@@ -40,11 +40,11 @@
 #' # These values are easy to understand. Let's now see:
 #' centers(x, TRUE)
 #' # Here is how the first (0.5) and last (25) values are computed. The first
-#' one is computed so that the first value of x (1) is in the middle of the
-#' interval defined by the first two values of centers(x, TRUE) (0.5 and 1.5).
-#' Similarly, the last value (25) is computed so that the last value of x (22)
-#' is in the middle of the interval defined by the last two values of
-#' centers(x, TRUE) (19 and 25).
+#' # one is computed so that the first value of x (1) is in the middle of the
+#' # interval defined by the first two values of centers(x, TRUE) (0.5 and 1.5).
+#' # Similarly, the last value (25) is computed so that the last value of x (22)
+#' # is in the middle of the interval defined by the last two values of
+#' # centers(x, TRUE) (19 and 25).
 #'
 #' @export
 #'
@@ -54,3 +54,4 @@ centers <- function(x, with_borders = FALSE) {
     return(c(2 * x[1] - ctrs[1], ctrs, 2 * tail(x, 1) - tail(ctrs, 1)))
   ctrs
 }
+

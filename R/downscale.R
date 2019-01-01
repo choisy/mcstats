@@ -80,7 +80,7 @@ downscale <- function(y, x, n, interval = NULL) {
 
   nb <- length(x)
   the_centers <- centers(x, TRUE)
-  if (is.null(interval)) interval <- 3 * range(y)
+  if (is.null(interval)) interval <- range2(y, n = 3)
 
   # The function that makes the list of linear models (one per interval).
   # Note that it uses `nb` and `the_centers` defined above.
